@@ -1,0 +1,46 @@
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+div.class{
+    border: 1px;
+}
+.decs{
+    padding: 10px;
+    /*text-align: center;*/
+}
+h2{
+    font-family: Times New Roman;
+    font-size: 150%;
+    padding: 15px;
+}
+h4{
+    font-family: Times New Roman;
+    font-size: 100%;
+    padding: 15px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    /*font-size: 200%;*/
+}
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.style{
+    padding: 6px;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
