@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="baf21c88-b777-469a-b732-12017cf01a74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../ss8_bootstrap_basic/bai_tap2/langding_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ss8_bootstrap_basic/bai_tap2/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tao_trang_web_hien_thi_tg_he_thong/src/main/java/controller/SystemTimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss8_bootstrap_basic/bai_tap2/langding_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss8_bootstrap_basic/bai_tap2/langding_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
