@@ -45,8 +45,13 @@ public class ProductServlet extends HttpServlet {
     private void searchProduct(HttpServletRequest request, HttpServletResponse response){
             String name = request.getParameter("search");
             List<Product> products = productService.search(name);
-            request.setAttribute("products", products);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("product/search.jsp");
+                RequestDispatcher dispatcher;
+            if (products.size() == 0) {
+                dispatcher = request.getRequestDispatcher("error-404.jsp");
+            } else {
+                request.setAttribute("products", products);
+                 dispatcher = request.getRequestDispatcher("product/search.jsp");
+            }
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -58,7 +63,6 @@ public class ProductServlet extends HttpServlet {
     private void listProduct(HttpServletRequest request, HttpServletResponse response) {
         List<Product> products = this.productService.findAll();
         request.setAttribute("products", products);
-
         RequestDispatcher dispatcher = request.getRequestDispatcher("product/list.jsp");
         try {
             dispatcher.forward(request, response);
