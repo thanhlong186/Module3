@@ -16,10 +16,10 @@
 <center>
   <h1>User Management</h1>
   <form action="/users?action=search" method="post">
-  <input type="text" name="search" placeholder="search">
-  <input type="submit" value="search">
+    <input type="text" name="search" placeholder="search">
+    <input type="submit" value="search">
   </form>
-  <h2>
+    <h2>
     <a href="/users?action=create">Add New User</a>
   </h2>
 </center>
