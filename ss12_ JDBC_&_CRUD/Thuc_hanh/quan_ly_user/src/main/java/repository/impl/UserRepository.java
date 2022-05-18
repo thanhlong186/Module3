@@ -105,7 +105,7 @@ public class UserRepository implements IUserRepository {
         try (PreparedStatement statement = BaseRepository.connection.prepareStatement(DELETE_USERS_SQL);) {
             statement.setInt(1, id);
             rowDeleted = statement.executeUpdate() > 0;
-        }
+        }   
         return rowDeleted;
     }
 
